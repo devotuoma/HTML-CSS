@@ -1,0 +1,101 @@
+/* Resetting default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container for centering the form */
+.container {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for each form group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 8px;
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: vertical;
+}
+
+/* Focus effect for inputs and textarea */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Styling for the Send button */
+.send-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.send-btn:hover {
+    background-color: #45a049;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+}
